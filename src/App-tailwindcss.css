@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply font-sans;
+  font-family: 'Poppins', sans-serif;
+  @apply m-0 p-0 box-border;
+  background-color: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.App {
+  @apply text-center;
+}
+
+h1 {
+  @apply text-white mb-0.5 text-lg;
+}
+
+.TodoWrapper {
+  @apply bg-indigo-900 mt-20 p-8 rounded;
+}
+
+.TodoForm {
+  @apply w-full mb-4;
+}
+
+.todo-input {
+  @apply outline-none bg-none border border-indigo-900 px-4 py-2 mt-4 mb-8 w-64 text-white;
+}
+
+.todo-input::placeholder {
+  @apply text-white opacity-50;
+}
+
+.todo-btn {
+  @apply bg-indigo-900 text-white border-none px-3 py-2 cursor-pointer;
+}
+
+.Todo {
+  @apply flex justify-between items-center bg-indigo-900 text-white px-4 py-2 rounded mb-4;
+}
+
+.fa-trash {
+  @apply ml-3;
+}
+
+.incompleted {
+  @apply text-white cursor-pointer;
+}
+
+.completed {
+  @apply text-indigo-200 line-through cursor-pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  @apply cursor-pointer;
+}
